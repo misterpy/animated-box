@@ -1,0 +1,63 @@
+h1 {
+	font-family:"Verdana", serif;
+	font-size:6.5em;
+}
+
+div {
+	border-style: solid;
+	border-width: 5px;
+	margin-top: 50px;
+	visibility: hidden;
+}
+
+.main {
+	border-color: blue;
+	width: 850px;
+	height: 600px;
+	visibility: visible;
+	animation: outbox_animation 0.5s;
+	-moz-animation: outbox_animation 0.5s;
+	-webkit-animation: outbox_animation 0.5s; /* Safari and Chrome */
+}
+
+.submain {
+	border-color: red;
+	width: 130px;
+	height: 130px;
+	margin-top: 235px;
+	margin-left: 0px;
+	visibility: visible;
+	animation: inbox_animation 1s;
+	-moz-animation: inbox_animation 1s;
+	-webkit-animation: inbox_animation 1s;
+}
+
+@keyframes outbox_animation{
+	0% {width: 850px; height: 600}
+	100% {width: 850px; height: 600px;}
+}
+
+@-webkit-keyframes outbox_animation{
+	0% {width: 850px; height: 600}
+	100% {width: 850px; height: 600px;}
+}
+
+@-moz-keyframes outbox_animation{
+	0% {width: 850px; height: 600}
+	100% {width: 850px; height: 600px;}
+}
+
+@keyframes inbox_animation {
+	0% {width: 0px; height: 0px; margin-top: 0px;}
+	100% {width: 130px; height: 130px; margin-top: 235px;}
+}
+
+@-moz-keyframes inbox_animation {
+	0% {width: 0px; height: 0px; margin-top: 0px;}
+	100% {width: 130px; height: 130px; margin-top: 235px;}
+}
+
+@-webkit-keyframes inbox_animation {
+	0% {width: 0px; height: 0px; margin-top: 0px;}
+	100% {width: 130px; height: 130px; margin-top: 235px;}
+}
